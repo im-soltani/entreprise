@@ -1,0 +1,106 @@
+.Email {
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #fff;
+  margin: 0 0.5rem;
+  &-title {
+    padding: 2rem 3rem;
+    font-size: $font-size-medium;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  &-container {
+    background-color: white;
+
+    padding: 1.25rem;
+  }
+  &-card__title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+  }
+  &-list__title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  &-tr__header {
+    font-size: 1rem;
+    color: $color-primary;
+    border: unset;
+    background-color: #eeeeee;
+    padding: 20px !important;
+    text-align: left;
+  }
+  &-tr {
+    font-size: 1rem;
+    background-color: white;
+    border: unset;
+    color: gray;
+    padding: 20px;
+    text-align: left;
+  }
+  &-card__button {
+    font-size: 1.1rem;
+    background-color: white !important;
+    border: unset;
+    color: gray !important;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    background-color: #f1f1f1 !important;
+    border-color: #f1f1f1 !important;
+    padding: 10px 25px;
+    margin-bottom: 20px !important;
+    font-size: 1rem !important;
+    &:hover {
+      background-color: #2d5298 !important;
+      color: #FFF !important;
+    }
+  }
+  &-card__button_active {
+    font-size: 1rem;
+    box-shadow: 0 0 0 0.2rem #2d5298;
+    background-color: #2d5298 !important;
+    border: unset;
+    color: #FFF !important;
+    width: 100%;
+    /* font-weight: 600 !important; */
+    padding: 20px;
+    text-align: left;
+    padding: 10px 25px;
+    margin-bottom: 20px !important;
+    &:hover {
+      background-color: #2d5298 !important;
+      color: #FFF !important;
+    }
+  }
+  &-template__row {
+    padding: 1rem;
+    border: 2px solid rgb(240, 240, 240);
+
+    overflow-y: auto;
+  }
+  &-template__row-header {
+    margin: 0 0rem;
+    margin-bottom: 1rem;
+    color: $color-primary;
+    font-weight: 800;
+    font-size: $font-size-small;
+  }
+  &-button__action {
+    width: 100%;
+    padding: 10px;
+    font-size:14px;
+
+    font-weight: 600 !important;
+    color: #FFF !important;
+    border: unset;
+    background-color: $color-secondary !important;
+    &:hover {
+      background-color: $color-primary !important;
+      color: white !important;
+    }
+  }
+  &-card__p {
+    font-size: 0.9rem;
+  }
+}

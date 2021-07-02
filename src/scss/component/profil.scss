@@ -1,0 +1,337 @@
+.profile-div {
+  padding-left: 20px;
+  font-size: 1.7rem;
+  color: $color-primary;
+  font-weight: 600;
+  &:after {
+    content: "";
+    position: relative;
+    border-style: solid;
+    border-width: 0 100px 2px;
+    border-color: #f7c93e;
+    display: block;
+    width: 0;
+    z-index: 1;
+  }
+}
+.profile-div2 {
+  font-size: 1.7rem;
+  padding-left: 10px;
+  color: $color-secondary;
+  font-weight: 600;
+}
+.Profil {
+  font-family: "Montserrat", sans-serif !important;
+  text-align: left;
+  padding: 1em;
+  margin: 1em;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #fff;
+  @media (min-width: 760px) {
+    &-logo {
+      margin-top: -6em;
+      width: 22em;
+      margin-left: 4em;
+    }
+  }
+  @media (max-width: 761px) {
+    &-logo {
+      margin-top: -5em;
+
+      margin-left: 1em;
+    }
+  }
+  &-group__item {
+    margin-bottom: 2em;
+  }
+  &-group__label {
+    color: $color-primary;
+    font-size: 1rem;
+    font-weight: 600;
+    width: auto;
+    margin-bottom: 7px !important
+  }
+  &-group__input {
+    height: 3em;
+    font-size: 0.9rem !important;
+    border-radius: 24px;
+    color: black;
+  }
+  &-group__value {
+    color: black;
+    font-size: 0.9rem !important;
+    font-weight: 400;
+  }
+  &-div__btn {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &-sticky {
+    background-color: #e9e8e8;
+    display: flex;
+    height: 3em;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+
+    padding-left: 10px;
+    padding-right: 8px;
+    font-size: 0.9rem !important;
+    color: #2552ac;
+    border-radius: 2em;
+    line-height: 3em;
+    margin-right: 1em;
+  }
+
+  &-btn__duplicate {
+    width: 12em;
+    margin-right: 1em;
+    /*background-color: rgb(25, 13, 129) !important;*/
+    border: unset;
+    text-align: center;
+    height: 3em;
+    font-weight: 600;
+    margin-top: 1em;
+    &:hover {
+      background-color: $color-secondary !important;
+      color: #212529 !important;
+      font-weight: 400;
+    }
+  }
+
+  &-logo__btn__upload {
+    text-align: center;
+    margin-top: -6em;
+    background-color: #4e89d2;
+    width: inherit;
+    height: 3em;
+    line-height: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .Profil-logo__img {
+    width: 70%;
+  }
+  .Profil-btns {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .Profil-btn__cancel {
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    background-color: $color-secondary !important;
+    border: none;
+    text-transform: uppercase;
+    height: 3em;
+    font-weight: 600;
+    margin-right: 1em;
+    margin-top: 2em;
+    color:#FFF !important
+  }
+  .Profil-btn__preview {
+    max-width: 250px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff !important;
+    background-color: $color-active !important;
+    border: none;
+    height: 3em;
+    font-weight: 600;
+    margin-right: 1em;
+    margin-top: 2em;
+  }
+  .Profil-btn__success {
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    height: 3em;
+    font-weight: 600;
+    margin-top: 2em;
+  }
+  .Profil-banner {
+    height: 300px;
+  }
+  .Profil-logo__upload {
+    justify-content: center;
+    text-align: center;
+  }
+  .img-banner_2 {
+    height: 300px;
+  }
+  .Profil-logo-label {
+    margin-top: 1% !important;
+  }
+  .img-logo {
+    width: 50% !important;
+  }
+  .Profil-btn__edit {
+    width: 16em;
+    text-align: center;
+    height: 3em;
+    font-weight: 600;
+    margin-top: 1em;
+    background-color: $color-primary;
+    border-color: $color-primary;
+    &:hover {
+      background-color: #9da0a0;
+      border-color: #9da0a0;
+    }
+  }
+}
+.btn_dup{
+  position: "absolute"; 
+  right: 0; 
+  margin-right: 110
+}
+@media only screen and (max-width: 800px) {
+  .Profil-logo__img {
+    width: 50%;
+    margin-top: 2rem;
+  }
+  .Profil-banner {
+    height: 150px;
+  }
+  .Profil-btns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Profil-btn__cancel {
+    width: 100%;
+    text-align: center;
+    background-color: $color-secondary !important;
+    border: none;
+    text-transform: uppercase;
+    height: 3em;
+    font-weight: 600;
+    margin-right: 1em;
+    color:#FFF !important
+  }
+  .Profil-btn__preview {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff !important;
+    background-color: $color-active !important;
+    border: none;
+    height: 3em;
+    font-weight: 600;
+    margin-right: 1em;
+  }
+  .Profil-btn__success {
+    width: 100%;
+    text-align: center;
+    height: 3em;
+    font-weight: 600;
+  }
+  .Profil-logo__upload {
+    justify-content: center;
+    text-align: center;
+  }
+  .img-banner_2 {
+    height: 150px;
+  }
+  .img-logo {
+    width: 50%;
+  }
+  .Profil-logo-label {
+    margin-top: 2.5rem;
+  }
+  .Profil-btn__edit {
+    width: 16em;
+    text-align: center;
+    height: 3em;
+    font-weight: 600;
+    margin-top: 5em;
+    background-color: $color-primary;
+    border-color: $color-primary;
+    &:hover {
+      background-color: #9da0a0;
+      border-color: #9da0a0;
+    }
+  }
+  .btn_of{
+
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 300px !important;
+    padding: 12px 25px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    max-width: 250px !important;
+  }
+  .nono_pad{
+padding-left: 0;
+padding-right: 0
+  }
+  .bloc_t{
+    margin-left: 0 !important
+  }
+  .bloc_marg{
+    margin-bottom: 30px
+  }
+  .nav-tabs {
+display: block !important
+}
+.btn_dup{
+  position: relative !important
+}
+#talkbubble {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: -20px;
+}
+.ModalSahreCV{
+  max-width: 100% !important
+}
+}
+.mail_css{
+  text-align: center;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center
+}
+@media only screen and (max-width: 500px) {
+  .btn.btn-lg {
+width: 100%
+}
+.card-body{
+ /* padding-left: 0;
+  padding-right: 0*/
+}
+.btn_dup button{
+  margin: 0 !important
+}
+.none{
+  display: none
+}
+.bnt{
+  width: 100% !important
+}
+.no_tab{
+  padding: 0 !important
+}
+.react-confirm-alert-body > h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.hObSgW{
+  overflow: scroll;
+}
+.mail_css{
+  display: block;
+}
+}

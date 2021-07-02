@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.container {
+  font-family: "Montserrat", sans-serif !important;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 98%;
+  }
+}
+
+.container {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 98%;
+  }
+}
+
+.container__wrap {
+  padding-left: 0;
+  padding-top: 90px;
+  min-height: 100vh;
+  transition: padding-left 0.3s;
+
+  @include themify($themes) {
+    background: themed("colorBackgroundBody");
+  }
+}
+
+.layout {
+  &.layout--collapse {
+    & + .container__wrap {
+      padding: 5% 1% 1% 1%;
+    }
+  }
+
+  &.layout--top-navigation {
+    & + .container__wrap {
+      @media screen and (min-width: 576px) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 870px) {
+  .layout {
+    &.layout--collapse {
+      & + .container__wrap {
+        padding: 9% 1% 1% 1%;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .layout {
+    &.layout--collapse {
+      & + .container__wrap {
+        padding: 6% 1% 1% 1%;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .layout {
+    &.layout--collapse {
+      & + .container__wrap {
+        padding: 13% 1% 1% 1%;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .layout {
+    &.layout--collapse {
+      & + .container__wrap {
+        padding: 17% 1% 1% 1%;
+      }
+    }
+  }
+}
